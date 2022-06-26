@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    Ricardo&#39;s Blog
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta name="google-site-verification" content="w6HoLfl1GA2J6HYin9M9NfIVAcPd9DiUgcAjgk0poNg" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Ricardo">
+<meta name="description" content="Integrated Circuit into the future.">
+<meta name="keywords" content="Ricardo Sung, IC design, Power management, DIY">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ricardosung.tech/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-291737154"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'UA-291737154');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ricardosung.tech">
+                    Ricardo&#39;s Blog
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        Home
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        Tags
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        Links
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/about">
+                        About
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/resume">
+                        Resume
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ricardosung.tech">
+                            Ricardo&#39;s Blog
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            Home
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            Tags
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            Links
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/about">
+                            About
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/resume">
+                            Resume
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                A 12V/24V-to-1V DSD Power Converter with 56mV Droop and 0.9\mu \mathrmS$ 1% Settling Time for a 3A/20ns Load Transient
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        Ricardo's Blog
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2022-05-11</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">0.9
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">235</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ricardosung.tech/Z0ICAXkp4/">Hybrid Topology</a>
+                                
+                                <a href="https://ricardosung.tech/2Cpd8gArw/">PowerManage</a>
+                                
+                                <a href="https://ricardosung.tech/mtzHqoQcv/">Paper</a>
+                                
+                                <a href="https://ricardosung.tech/_SVivXVOe/">IC Design</a>
+                                
+                                <a href="https://ricardosung.tech/N13JcKHCm/">Reading Notes</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <figure data-type="image" tabindex="1"><img src="https://ricardosung.tech/post-images/1652254425057.png" alt="" loading="lazy"></figure>
+<h1 id="voltage-based-pwm-generator">Voltage-based PWM generator</h1>
+<p>两路信号，一路为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>o</mi><mi>u</mi><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{out}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">o</span><span class="mord mathdefault mtight">u</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，一路为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mi>C</mi></msub></mrow><annotation encoding="application/x-tex">V_C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，采用电压和三角波比较的方式得到方波<br>
+<img src="https://ricardosung.tech/post-images/1652254440895.png" alt="" loading="lazy"><br>
+<img src="https://ricardosung.tech/post-images/1652254450820.png" alt="" loading="lazy"><br>
+通过人为调节的方式，将电压分为两个部分，其中Phase1因为是带来功率的，因此是允许存在超过50%占空比的情况。而电容的误差电压，通过增加<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><msub><mi>V</mi><mi>L</mi></msub><mo>+</mo><msub><mi>V</mi><mi>H</mi></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{V_L+V_H}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2336359999999997em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8886359999999999em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.410305em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3567071428571427em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">L</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.14329285714285717em;"><span></span></span></span></span></span></span><span class="mbin mtight">+</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3567071428571427em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.14329285714285717em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>的偏置，与三角波的上半部分去比较得到方波。</p>
+<p>为了防止产生重合overlap，添加与或非门控制PWM1和PWM2.</p>
+<figure data-type="image" tabindex="2"><img src="https://ricardosung.tech/post-images/1652254464742.png" alt="" loading="lazy"></figure>
+<h1 id="delay-insensitive-technique">Delay-insensitive Technique</h1>
+<p>由于RS锁存器的原因，如果负载电流变化不是在clock的上升沿时候，需要最多0.5T的时间，才能实现对负载的快速响应。采用延迟不敏感技术，可以提高负载调整率</p>
+<figure data-type="image" tabindex="3"><img src="https://ricardosung.tech/post-images/1652254476793.png" alt="" loading="lazy"></figure>
+<h1 id="dual-phase-charging-technique">Dual-phase Charging Technique</h1>
+<p>占空比大于50%之后或者是出现重叠之后，为了补偿phase2而做</p>
+<figure data-type="image" tabindex="4"><img src="https://ricardosung.tech/post-images/1652254486330.png" alt="" loading="lazy"></figure>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#voltage-based-pwm-generator">Voltage-based PWM generator</a></li>
+<li><a href="#delay-insensitive-technique">Delay-insensitive Technique</a></li>
+<li><a href="#dual-phase-charging-technique">Dual-phase Charging Technique</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ricardosung.tech/tL_vciIrY/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ricardosung.tech/tL_vciIrY/&sharesource=qzone&title=A 12V/24V-to-1V DSD Power Converter with 56mV Droop and 0.9\mu \mathrmS$ 1% Settling Time for a 3A/20ns Load Transient&pics=https://ricardosung.tech/images/avatar.png?v=1656230709436&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ricardosung.tech/tL_vciIrY/&sharesource=weibo&title=A 12V/24V-to-1V DSD Power Converter with 56mV Droop and 0.9\mu \mathrmS$ 1% Settling Time for a 3A/20ns Load Transient + " - " + &pic="https://ricardosung.tech/images/avatar.png?v=1656230709436 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src="https://dm2305files.storage.live.com/y4mkmCY8O909XPXoPP_rgkvkoJPZ4xCVzy15R6uZfC7EskYurnLBvdRHHXQmugvQY0XBkGMdVln1ASMpQNnJgtD-HNGQg_mIC8VSbvSWwTqD61lC7_ELKF_23jkApkdk-WX2xgKCgN2hwGP2AFYXIp31ohwVaroIGQ9OTzhkXPx_DmFV3uy7BtClTKzx7DZDm0q?width=1080&amp;height=1094&amp;cropmode=none"><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://dm2305files.storage.live.com/y4m0cD5o2dGNAepQvue7nu-wLmL-pN0DImW-Sbq_fAXxztTI55YUmaA0TPDeC6CeC8bGi9wVwJtDYrD70xKuZ7F-ReqY2Iqp37BKcxcYrgS793GM4zlyT9FoD8QdoouAqTrvIRgM1CSGT5T1hqyi6ll8wZ-9mrURskYRuclZZDJKxDAssY9lB3rLAHRX3dKxncB?width=1118&amp;height=1024&amp;cropmode=none"><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ricardosung.tech/Z0ICAXkp4/">#
+                                                Hybrid Topology
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/2Cpd8gArw/">#
+                                                PowerManage
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/mtzHqoQcv/">#
+                                                Paper
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/_SVivXVOe/">#
+                                                IC Design
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/N13JcKHCm/">#
+                                                Reading Notes
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ricardosung.tech/d2N4sMoV5/">
+                                                                                            A 4A 12-to-1 Flying Capacitor Cross-Connected DC-DC Converter with Inserted D gt;0.5 Control Achieving gt;2x Transient Inductor Current Slew Rate and 0.73× Theoretical Minimum Output Undershoot of DSD
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ricardosung.tech/KmRUJJnqb/">
+                                                                                                    A Continuous-Input-Current Passive-Stacked Third-Order Buck Converter Achieving 0.7W/mm2 Power Density and 94% Peak Efficiency
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Ricardo&#39;s Blog &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                GitHub.com &amp; Aliyun.com
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.5
+                </div>
+                
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var music_array = [];
+                        
+                        music_array.push({
+                            name: '僕が死のうと思ったのは',
+                            url: 'http://music.163.com/song/media/outer/url?id=26830207',
+                            artist: '中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生活在别处的你 Another me',
+                            url: 'http://music.163.com/song/media/outer/url?id=1860567964',
+                            artist: '毛不易 / 中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: 'FLY-飞',
+                            url: 'http://music.163.com/song/media/outer/url?id=479422828',
+                            artist: 'ANU',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '男孩',
+                            url: 'http://music.163.com/song/media/outer/url?id=467952048',
+                            artist: '梁博',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '停止線の遥か手前で',
+                            url: 'http://music.163.com/song/media/outer/url?id=737462',
+                            artist: 'GOOD ON THE REEL',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '我很丑可是我很温柔',
+                            url: 'http://music.163.com/song/media/outer/url?id=543657007',
+                            artist: '赵传',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '上头歌',
+                            url: 'http://music.163.com/song/media/outer/url?id=538227228',
+                            artist: '石磊4ROCK',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生而为人',
+                            url: 'http://music.163.com/song/media/outer/url?id=1335350269',
+                            artist: '尚士达',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '浪子回頭',
+                            url: 'http://music.163.com/song/media/outer/url?id=516728102',
+                            artist: '茄子蛋',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '野子',
+                            url: 'http://music.163.com/song/media/outer/url?id=401723037',
+                            artist: '苏运莹',
+                            cover: '',
+                        });
+                        
+                        console.log(" MusicList: " + music_array);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: music_array
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1656230709436);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+                
+                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
+                    <script>
+                        (function(T, h, i, n, k, P, a, g, e) {
+                            g = function() {
+                                P = h.createElement(i);
+                                a = h.getElementsByTagName(i)[0];
+                                P.src = k;
+                                P.charset = "utf-8";
+                                P.async = 1;
+                                a.parentNode.insertBefore(P, a)
+                            };
+                            T["ThinkPageWeatherWidgetObject"] = n;
+                            T[n] || (T[n] = function() {
+                                (T[n].q = T[n].q || []).push(arguments)
+                            });
+                            T[n].l = +new Date();
+                            if (T.attachEvent) {
+                                T.attachEvent("onload", g)
+                            } else {
+                                T.addEventListener("load", g, false)
+                            }
+                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+                    </script>
+                    <script>
+                        var wearther_margin = "10px 10px";
+                        
+                        wearther_margin = "70px 5px";
+                        
+                        tpwidget("init", {
+                            "flavor": "bubble",
+                            "location": "WX4FBXXFKE4F",
+                            "geolocation": "enabled",
+                            "position": "bottom-left",
+                            "margin": wearther_margin,
+                            "language": "zh-chs",
+                            "unit": "c",
+                            "theme": "chameleon",
+                            "uid": "UFC977E1C7",
+                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
+                        });
+                        tpwidget("show");
+                    </script>
+                    
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1122.5197 793.70081"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="waveform.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="643"
+     inkscape:cy="298.5"
+     inkscape:window-width="1879"
+     inkscape:window-height="1408"
+     inkscape:window-x="-1888"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path939" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="marker1209"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1207" />
+    </marker>
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Lend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) rotate(180) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path942" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path939-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path942-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path939-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path942-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path939-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path942-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path939-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path942-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-5-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path939-4-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-8-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path942-3-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart-2-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path939-9-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-3-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path942-9-9" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="M 461.61791,215.22782 H 246.83807 V 86.162478"
+       id="path857"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.03849,196.66437 H 452.30413"
+       id="path1313"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 245.8438,178.067 H 451.10944"
+       id="path1313-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.53003,159.0713 H 451.79567"
+       id="path1313-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.21708,140.32225 H 451.48272"
+       id="path1313-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.65497,121.82068 H 451.92061"
+       id="path1313-10"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.34202,103.07162 H 451.60766"
+       id="path1313-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 265.47699,94.351168 V 215.35048"
+       id="path2083"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 284.45002,95.788208 V 215.77411"
+       id="path2198"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 303.20076,95.975258 V 215.72123"
+       id="path2200"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 322.20065,95.911468 V 215.90828"
+       id="path2202"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 341.1997,95.597678 V 215.08023"
+       id="path2204"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 360.20296,96.533888 V 215.27314"
+       id="path2206"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 378.70622,97.471768 V 215.22446"
+       id="path2208"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 397.70107,95.907988 V 215.40647"
+       id="path2210"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 416.45013,95.595038 V 215.59185"
+       id="path2212"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 435.45086,95.781248 V 215.77554"
+       id="path2214"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-5);marker-end:url(#Arrow1Lend-8)"
+       d="M 773.34832,214.81458 H 558.56848 V 85.749242"
+       id="path857-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.7689,196.25113 H 764.03454"
+       id="path1313-28"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 557.57421,177.65376 H 762.83985"
+       id="path1313-9-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.26044,158.65806 H 763.52608"
+       id="path1313-1-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 557.94749,139.90901 H 763.21313"
+       id="path1313-2-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.38538,121.40744 H 763.65102"
+       id="path1313-10-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.07243,102.65838 H 763.33807"
+       id="path1313-8-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 577.2074,93.937932 V 214.93724"
+       id="path2083-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 596.18043,95.374972 V 215.36087"
+       id="path2198-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 614.93117,95.562022 V 215.30799"
+       id="path2200-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 633.93106,95.498232 V 215.49504"
+       id="path2202-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 652.93011,95.184442 V 214.66699"
+       id="path2204-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 671.93337,96.120652 V 214.8599"
+       id="path2206-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 690.43663,97.058532 V 214.81122"
+       id="path2208-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 709.43148,95.494752 V 214.99323"
+       id="path2210-7"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 728.18054,95.181802 V 215.17861"
+       id="path2212-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 747.18127,95.368012 V 215.3623"
+       id="path2214-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-6);marker-end:url(#Arrow1Lend-9)"
+       d="M 461.61791,423.82433 H 246.83807 V 294.75898"
+       id="path857-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.03849,405.26088 H 452.30413"
+       id="path1313-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 245.8438,386.66351 H 451.10944"
+       id="path1313-9-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.53003,367.66781 H 451.79567"
+       id="path1313-1-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.21708,348.91876 H 451.48272"
+       id="path1313-2-7"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.65497,330.41718 H 451.92061"
+       id="path1313-10-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 246.34202,311.66812 H 451.60766"
+       id="path1313-8-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 265.47699,302.94767 V 423.94699"
+       id="path2083-68"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 284.45002,304.38471 V 424.37062"
+       id="path2198-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 303.20076,304.57176 V 424.31774"
+       id="path2200-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 322.20065,304.50797 V 424.50479"
+       id="path2202-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 341.1997,304.19419 V 423.67674"
+       id="path2204-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 360.20296,305.13039 V 423.86965"
+       id="path2206-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 378.70622,306.06827 v 117.7527"
+       id="path2208-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 397.70107,304.50449 V 424.00298"
+       id="path2210-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 416.45013,304.19154 V 424.18836"
+       id="path2212-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 435.45086,304.37775 v 119.9943"
+       id="path2214-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-2);marker-end:url(#Arrow1Lend-3)"
+       d="m 773.34832,371.65373 -9.82224,-0.15652 H 558.26044 l 0.30804,-72.90883"
+       id="path857-2"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.7689,409.09028 H 764.03454"
+       id="path1313-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 557.57421,390.49291 H 762.83985"
+       id="path1313-9-7"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.26044,371.49721 H 763.52608"
+       id="path1313-1-54"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 557.94749,352.74816 H 763.21313"
+       id="path1313-2-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.38538,334.24658 H 763.65102"
+       id="path1313-10-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.07243,315.49752 H 763.33807"
+       id="path1313-8-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 577.2074,306.77707 V 427.77639"
+       id="path2083-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 596.18043,308.21411 V 428.20002"
+       id="path2198-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 614.93117,308.40116 V 428.14714"
+       id="path2200-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 633.93106,308.33738 V 428.33419"
+       id="path2202-64"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 652.93011,308.02358 V 427.50614"
+       id="path2204-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 671.93337,308.95979 V 427.69905"
+       id="path2206-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 690.43663,309.89767 v 117.7527"
+       id="path2208-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 709.43148,308.33389 V 427.83238"
+       id="path2210-50"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 728.18054,308.02094 V 428.01776"
+       id="path2212-21"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 747.18127,308.20716 V 428.20145"
+       id="path2214-91"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#be0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 246.65497,121.82068 h 19.08768 l -0.26566,93.5298 56.75491,-0.1297 -0.0312,-93.58348 h 19.042 l -0.0429,93.44293 56.50137,0.32624 v -93.76914 h 18.79158 l 0.0901,93.46841 29.39151,0.17678"
+       id="path1227"
+       sodipodi:nodetypes="cccccccccccc"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 558.53654,215.22016 37.61195,0.54629 v -94.32688 h 18.78268 v 93.86842 l 56.97026,-0.0425 v -93.82591 h 18.33661 v 94.04519 l 56.91129,0.28312 v -94.15154 l 16.46975,0.19668"
+       id="path2769"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="259.35178"
+       y="94.529671"
+       id="text8197"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         x="259.35178"
+         y="94.529671"
+         style="font-size:14.6667px"
+         id="tspan26760">V<tspan
+   style="font-size:10.6667px"
+   id="tspan29158">g,S1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="221.5645"
+       y="306.30853"
+       id="text8197-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         x="221.5645"
+         y="306.30853"
+         style="font-size:14.6667px"
+         id="tspan26760-2">V<tspan
+   style="font-size:10.6667px"
+   id="tspan29158-3">C</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="571.14105"
+       y="93.629921"
+       id="text8197-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan8195-4"
+         x="571.14105"
+         y="93.629921"
+         style="font-size:14.6667px">V<tspan
+   style="font-size:10.6667px"
+   id="tspan36192">g,S2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="422.20343"
+       y="232.46298"
+       id="text13571"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569"
+         x="422.20343"
+         y="232.46298"
+         style="font-size:14.6667px">Time</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="730.50507"
+       y="233.84831"
+       id="text13571-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-3"
+         x="730.50507"
+         y="233.84831"
+         style="font-size:14.6667px">Time</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="752.06812"
+       y="393.66174"
+       id="text13571-4-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-3-4"
+         x="752.06812"
+         y="393.66174"
+         style="font-size:14.6667px">Time</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none"
+       x="323.21164"
+       y="118.58994"
+       id="text13571-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-6"
+         x="323.21164"
+         y="118.58994"
+         style="font-size:14.6667px;fill:#ff0000;fill-opacity:1;stroke-width:1.00157;stroke-miterlimit:4;stroke-dasharray:none">S1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="594.9585"
+       y="118.22871"
+       id="text13571-65"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-68"
+         x="594.9585"
+         y="118.22871"
+         style="font-size:14.6667px;fill:#0000ff;fill-opacity:1">S2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-5-9);marker-end:url(#Arrow1Lend-8-5)"
+       d="M 773.34832,627.76495 H 558.56848 V 498.69961"
+       id="path857-3-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.7689,609.2015 H 764.03454"
+       id="path1313-28-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 557.57421,590.60413 H 762.83985"
+       id="path1313-9-9-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.26044,571.60843 H 763.52608"
+       id="path1313-1-1-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 557.94749,552.85938 H 763.21313"
+       id="path1313-2-2-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.38538,534.35781 H 763.65102"
+       id="path1313-10-2-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 558.07243,515.60875 H 763.33807"
+       id="path1313-8-2-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 577.2074,506.8883 V 627.88761"
+       id="path2083-6-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 596.18043,508.32534 v 119.9859"
+       id="path2198-1-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 614.93117,508.51239 V 628.25836"
+       id="path2200-5-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 633.93106,508.4486 V 628.44541"
+       id="path2202-6-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 652.93011,508.13481 V 627.61736"
+       id="path2204-5-7"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 671.93337,509.07102 V 627.81027"
+       id="path2206-8-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 690.43663,510.0089 V 627.76159"
+       id="path2208-1-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 709.43148,508.44512 V 627.9436"
+       id="path2210-7-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 728.18054,508.13217 V 628.12898"
+       id="path2212-2-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 747.18127,508.31838 V 628.31267"
+       id="path2214-6-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="222.81387"
+       y="513.0968"
+       id="text8197-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         x="222.81387"
+         y="513.0968"
+         style="font-size:14.6667px"
+         id="tspan26760-0">V<tspan
+   style="font-size:10.6667px"
+   id="tspan50237">L</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="537.76764"
+       y="511.82605"
+       id="text8197-5-7"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan8195-4-2"
+         x="537.76764"
+         y="511.82605"
+         style="font-size:14.6667px">I<tspan
+   style="font-size:10.6667px"
+   id="tspan36192-8">L</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="730.505"
+       y="646.79871"
+       id="text13571-4-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-3-1"
+         x="730.505"
+         y="646.79871"
+         style="font-size:14.6667px">Time</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="420.79236"
+       y="445.27328"
+       id="text13571-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-5"
+         x="420.79236"
+         y="445.27328"
+         style="font-size:14.6667px">Time</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="533.35693"
+       y="309.28864"
+       id="text8197-3-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         x="533.35693"
+         y="309.28864"
+         style="font-size:14.6667px"
+         id="tspan26760-2-2">I<tspan
+   style="font-size:10.6667px"
+   id="tspan29158-3-3">C</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 246.21708,348.91876 19.40057,-18.53145 19,0.125 18.52666,18.35814 18.84834,0.14186 19.33543,-18.61503 18.91457,0.11503 18.4375,18.4375 18.8125,-0.0625 19,-18.625 h 18.625 l 16.375,13.875"
+       id="path44635"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 558.26044,371.49721 v 67.3901"
+       id="path45324"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 557.94749,352.74816 19.29516,-18.61085 -0.125,37.5 19.125,-0.25 v 19 l 18.625,18.625 0.125,-37.5 18.75,-0.25 0.125,-18.625 19.12501,-18.375 -0.125,37.25 19.125,0.125 v 18.75 l 18.25,18.625 0.25,-37.625 h 18.875 v -19 l 18.875,-18.25 v 37.5 h 19 v 18.5 l 16.75,15.375"
+       id="path46999"
+       sodipodi:nodetypes="cccccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.00157;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-2-2);marker-end:url(#Arrow1Lend-3-3)"
+       d="m 462.92844,571.76495 -9.82224,-0.15652 H 247.84056 l 0.30804,-72.90883"
+       id="path857-2-6"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 248.34902,609.2015 H 453.61466"
+       id="path1313-6-9"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.15433,590.60413 H 452.41997"
+       id="path1313-9-7-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.84056,571.60843 H 453.1062"
+       id="path1313-1-54-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.52761,552.85938 H 452.79325"
+       id="path1313-2-0-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.9655,534.3578 H 453.23114"
+       id="path1313-10-6-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 247.65255,515.60874 H 452.91819"
+       id="path1313-8-4-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 266.78752,506.88829 V 627.88761"
+       id="path2083-2-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 285.76055,508.32533 V 628.31124"
+       id="path2198-4-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 304.51129,508.51238 V 628.25836"
+       id="path2200-6-6"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 323.51118,508.4486 V 628.44541"
+       id="path2202-64-0"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 342.51023,508.1348 V 627.61736"
+       id="path2204-2-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 361.51349,509.07101 V 627.81027"
+       id="path2206-5-3"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 380.01675,510.00889 v 117.7527"
+       id="path2208-9-1"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 399.0116,508.44511 V 627.9436"
+       id="path2210-50-4"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 417.76066,508.13216 V 628.12898"
+       id="path2212-21-5"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.245669;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.245669, 0.982677;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 436.76139,508.31838 V 628.31267"
+       id="path2214-91-7"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="441.64822"
+       y="593.77295"
+       id="text13571-4-6-8"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"><tspan
+         sodipodi:role="line"
+         id="tspan13569-3-4-3"
+         x="441.64822"
+         y="593.77295"
+         style="font-size:14.6667px">Time</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 247.84056,571.60843 v 67.3901"
+       id="path45324-2"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 247.9655,534.3578 h 18.67443 v 56.25478 h 19.09188 V 542.7061 h 18.73833 v 48.26004 h 19.09188 v -56.74532 h 18.91511 v 56.39176 h 18.91511 v -47.55293 h 18.9151 v 47.72971 h 18.91511 V 534.22082 H 417.784 v 56.74532 h 19.09188 v -46.49228 h 18.03123"
+       id="path54039"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 558.26044,571.60843 18.79936,-18.73767 19.0035,18.82672 18.73833,-18.82672 19.09188,18.64994 19.00351,-18.82672 18.9151,18.91511 18.47317,-18.73833 19.09188,18.56155 18.56155,-18.64994 19.09189,18.73833 15.99829,-16.79379"
+       id="path54234"
+       inkscape:export-filename="C:\Users\Ricardo\OneDrive\Gridea\images\post2\path857.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+  </g>
+</svg>

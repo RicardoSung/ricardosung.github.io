@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    Ricardo&#39;s Blog
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta name="google-site-verification" content="w6HoLfl1GA2J6HYin9M9NfIVAcPd9DiUgcAjgk0poNg" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Ricardo">
+<meta name="description" content="Integrated Circuit into the future.">
+<meta name="keywords" content="Ricardo Sung, IC design, Power management, DIY">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ricardosung.tech/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-291737154"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'UA-291737154');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ricardosung.tech">
+                    Ricardo&#39;s Blog
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        Home
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        Tags
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        Links
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/about">
+                        About
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/resume">
+                        Resume
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ricardosung.tech">
+                            Ricardo&#39;s Blog
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            Home
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            Tags
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            Links
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/about">
+                            About
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/resume">
+                            Resume
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Build Your IC Design Evironment Based on Cadence IC617 Package
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        Ricardo's Blog
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2021-11-14</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">21.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">3448</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ricardosung.tech/DFcwZAvXw/">Linux</a>
+                                
+                                <a href="https://ricardosung.tech/IMSRVMLdz/">Virtuoso</a>
+                                
+                                <a href="https://ricardosung.tech/_SVivXVOe/">IC Design</a>
+                                
+                                <a href="https://ricardosung.tech/5zyCJ74Ai/">English</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <p>For beginners, you may feel confident after reading papers. I mean I still remember when I first read a paper about <code>Bandgap</code>, what I thought is that the circuit is so easy, which I could make it as soon as the speed of light. However, the real scene was quit different, even thought the paper has clainmed the size of mosfets, capacitors and resistors.<br>
+So, here, I will tell you all how to install Cadence IC617 on a VM (Virtual Machine). And if you want to install it on a RM (Real Machine), you can follow the same way, too.</p>
+<h2 id="announcement">Announcement</h2>
+<p>I try my best to protect copyright by using the licensed software. But I don't have access to the licensed Cadence, also the PDK, so you know ...</p>
+<h2 id="preparation">Preparation</h2>
+<ol>
+<li>A DVD installation ISO of <code>RHEL</code> operating system.</li>
+<li><code>Cadence IC617 Pacckage</code>.</li>
+<li><code>WinSCP</code>.</li>
+<li>Virtual machine software, eg. <code>Virtual Box</code>, <code>VMware Workstation Player</code> and <code>Hyper-V</code>.<br>
+<em>I highly recommond you using Vrtual Box or VMware Workstation Player, because I felt the mouse pointer is quite fluent  as in Windows Desk. Maybe Windows11 and my AMD 3900x caused it? Well, I don't know~~~</em></li>
+</ol>
+<h2 id="installation">Installation</h2>
+<p>I have divided the installation inroduction to two parts - OS installation and Cadence Installation. And I will do it using <code>VMware Workstation Player</code>.</p>
+<h3 id="os">OS</h3>
+<ol>
+<li>Create a new virtual machine and add RHEL iso<br>
+<img src="https://ricardosung.tech/post-images/1636858516697.png" alt="1" loading="lazy"></li>
+<li>Create your user name. It doesn't matter if <code>Full name</code> mismatch <code>User name</code>.<br>
+<img src="https://ricardosung.tech/post-images/1636858704056.png" alt="2" loading="lazy"></li>
+<li>Choose the location, where you want to install it and name the VM as your pleases.<br>
+<img src="https://ricardosung.tech/post-images/1636858881895.png" alt="3" loading="lazy"></li>
+<li>Space allocation is 40GB at least. Because the operating system costs arround 2GB and the software package costs at least 18GB.<br>
+<img src="https://ricardosung.tech/post-images/1636859108686.png" alt="4" loading="lazy"></li>
+<li>Customize hardware. I recommond you to give the VM at least 8GB memory and 4 cores. Then click &quot;finish&quot; button and wait for the auto installation. It may cost you 10-20minutes depending on your PC's performance.<br>
+<img src="https://ricardosung.tech/post-images/1636859882501.png" alt="5" loading="lazy"></li>
+<li>Have fun and enjoy your RHEL? No! After login the system, you need to login your RedHat account to activate the RHEL.</li>
+<li>Go to Settings -&gt; Details -&gt; About, and then type in your RedHat account name and password, if you don't have any organization, just keep it blank.</li>
+<li>Check for updates using <code>dnf</code> or <code>yum</code>.</li>
+</ol>
+<pre><code class="language-shell">su
+dnf update &amp;&amp; dnf upgrade
+</code></pre>
+<h3 id="environment">Environment</h3>
+<p>Before installing Cadence IC617, you must fit its dependence. Please open a terminal and type in the following.</p>
+<pre><code class="language-shell">dnf install ksh
+dnf install csh
+dnf install xterm
+dnf install libXext.so.6
+dnf install libXt.so.6
+dnf install libGLU.so.1 --setopt=protected_multilib=false 
+dnf install libelf.so.1
+dnf install libXrender.so.1
+dnf install libXp.so.6
+dnf install libXrandr.so.2
+dnf install libXp
+dnf install ld-linux.so.2
+dnf install openmotif
+dnf install libnsl.so.1
+dnf install libnsl
+dnf install ncurses
+dnf install libXtst
+dnf install libXi
+dnf install python
+dnf install net-tools
+dnf install libstdc++
+dnf install gcc
+dnf install gcc-c++
+dnf install redhat-lsb
+dnf install libXss.so.1
+
+ln -s /usr/bin/awk /bin/awk
+cd /lib64
+ln -s libcrypto.so.1.1 libcrypto.so.6
+ln -s libreadline.so.6 libreadline.so.5
+cd /usr/lib64
+ln -s libhistory.so.6 libhistory.so.5
+
+# set the hostname of OS
+hostnamectl --static set-hostname xxx
+</code></pre>
+<h3 id="cadence">Cadence</h3>
+<p><strong>If it tells you don't have any permission to do something or some installation failed, just use <code>su</code> to get the root privilege.</strong></p>
+<ol>
+<li>Send the package to VM. First, you need to know the VM ip. Type in <code>ifconfig</code> in shell and your VM ip is shown like this:<br>
+<img src="https://ricardosung.tech/post-images/1636877311327.png" alt="6" loading="lazy"><br>
+Then add the VM in WinSCP using SCP protocol. And save the details, so that you can transfer files between the RM and VM without type in the ip and so on again.<br>
+<img src="https://ricardosung.tech/post-images/1636877413523.png" alt="7" loading="lazy"><br>
+Finally, drag the package from RM to VM in WinSCP. But before that, create a folder firstly and set the privilige of the folder to 777.<br>
+<img src="https://ricardosung.tech/post-images/1636878270478.png" alt="8" loading="lazy"><br>
+Wait until transfer completed.<br>
+<img src="https://ricardosung.tech/post-images/1636878355774.png" alt="9" loading="lazy"></li>
+<li>Create a folder to install Cadence IC617, and to avoid some potential problems, I use <code>/opt/Cadence</code>.<br>
+<img src="https://ricardosung.tech/post-images/1636879625814.png" alt="10" loading="lazy"></li>
+<li>Back to the package archive folder, and install <code>Iscape</code> first. Because <code>Iscape</code> is a tool to install IC617. Use this command <code>sh iscape.sh</code><br>
+<img src="https://ricardosung.tech/post-images/1636879927220.png" alt="11" loading="lazy"></li>
+<li>Click <code>Preferences</code> -&gt; <code>InstallScape</code> -&gt; <code>Directions</code>, and change <code>Default Install Directory</code> to the new created folder <code>/opt/Cadence</code>. What's more, you can change other directions whatever you like, but keep others as default.<br>
+<img src="https://ricardosung.tech/post-images/1636880243906.png" alt="12" loading="lazy"></li>
+<li>Choose <code>Local directory/Media install</code> and browse to find the install package <code>IC617Hotfix</code><br>
+<img src="https://ricardosung.tech/post-images/1636880498067.png" alt="13" loading="lazy"></li>
+<li>Check the checkbox of <code>IC_617</code> and next.<br>
+<img src="https://ricardosung.tech/post-images/1636880574268.png" alt="14" loading="lazy"></li>
+<li>Select all <code>PIC</code> and check if the install directin is right.<br>
+<img src="https://ricardosung.tech/post-images/1636880733670.png" alt="15" loading="lazy"><br>
+Choose the base CD in the same directory <code>IC617xxx_base</code>, which is the original install file of Cadence. You know <code>hotfix</code> means <code>kpi</code> of programmers, which doesn't contain the original version.<br>
+<img src="https://ricardosung.tech/post-images/1636892865063.png" alt="16" loading="lazy"><br>
+Keep pressing <code>Enter</code> and <code>y</code> to  install &quot;Valid library and Sim primitives&quot; and &quot;XL library and Gate primitives&quot;.<br>
+<img src="https://ricardosung.tech/post-images/1636895098426.png" alt="18" loading="lazy"><br>
+When you are asked if &quot;Prepare libraries for AMS Designer&quot;. type in <code>2</code> to &quot;Quit&quot;.<br>
+<img src="https://ricardosung.tech/post-images/1636895217134.png" alt="19" loading="lazy"><br>
+Do not press <code>n</code> until the program asks &quot;Do you want to use a different OpenAccess installation (y/n/q)?&quot;.<br>
+<img src="https://ricardosung.tech/post-images/1636894777772.png" alt="17" loading="lazy"><br>
+If you see both &quot;Install Status&quot; and &quot;Configure Status&quot; are &quot;success&quot;, you can go to the next step or you can <code>Configure releases</code> to reconfigure.<br>
+<img src="https://ricardosung.tech/post-images/1636895670501.png" alt="20" loading="lazy"></li>
+<li>Install &quot;Spectre18&quot; and &quot;XCELIUMMAIN&quot; in the same way as installing &quot;IC617&quot;. And <strong>Do type in <code>n</code></strong> when bing asked if you want to  use a different OpenAccess installation (y/n/q).<br>
+<img src="https://ricardosung.tech/post-images/1636896342861.png" alt="21" loading="lazy"><br>
+<img src="https://ricardosung.tech/post-images/1636896353583.png" alt="22" loading="lazy"><br>
+<img src="https://ricardosung.tech/post-images/1636896446769.png" alt="23" loading="lazy"></li>
+<li>I believe you may feel amazed when you see the file type of Calibre installation package. It is &quot;.exe&quot;! Yes, it is &quot;.exe&quot;, but you cannot install it on Windows.<br>
+First, create an installation folder in <code>/opt/mentor/Calibre2019</code></li>
+</ol>
+<pre><code class="language-shell">mkdir /opt/mentor/Calibre2019
+mv /(original place)/Calibre/*  /opt/mentor/Calibre2019
+cd /opt/mentor/Calibre2019
+chmod 777 aoj_cal_2019.3_15.11_mib.exe
+./aoj_cal_2019.3_15.11_mib.exe ( -tgt /target_folder)
+</code></pre>
+<p>Then type in <code>D</code> and <code>yes</code>.<br>
+<img src="https://ricardosung.tech/post-images/1636948544144.png" alt="24" loading="lazy"><br>
+And wait ...<br>
+<img src="https://ricardosung.tech/post-images/1636949941818.png" alt="25" loading="lazy"></p>
+<h3 id="patch">Patch</h3>
+<ol>
+<li>Generate IC617 license.</li>
+</ol>
+<pre><code class="language-shell">su
+cd patch
+python3 cdslicgen.py
+cp ./license.dat /opt/Cadence/IC617/share/license
+chmod 777 /opt/Cadence/IC617/share/license/license.dat
+</code></pre>
+<ol start="2">
+<li>Generate Calibre license.<br>
+Type in <code>ifconfig</code> to find the local &quot;Mac address&quot;, which is called &quot;ether&quot;.<br>
+<img src="https://ricardosung.tech/post-images/1636952546558.png" alt="26" loading="lazy"></li>
+</ol>
+<pre><code class="language-shell">python3 mgclicgen.py (Mac address)
+</code></pre>
+<p>You may meet an error. I'm sorry, but I don't know how to solve it by adding a command in the python file. You can replace &quot;HOSTID&quot; by the Mac address manually and save the crack code as a new &quot;license.dat&quot;. Then</p>
+<pre><code class="language-shell">cp license.dat /opt/mentor/license/
+chmod 777 /opt/mentor/license/license.dat
+</code></pre>
+<ol start="3">
+<li>The only difference between IC617 license and XCELIUMMAIN license is</li>
+</ol>
+<pre><code class="language-shell">FEATURE Xcelium_Limited_Single_Core
+FEATURE XceliumLimitedSingleCoreLegacy
+FEATURE Xcelium_Single_Core
+FEATURE Xcelium_Single_Core_Legacy
+FEATURE Xcelium_Safety
+FEATURE Xcelium_Safety_Option
+FEATURE Xcelium_Multi_Core
+FEATURE Xcelium_For_Partners
+FEATURE Xcelium_SC_DMS_Option
+FEATURE Xcelium_MC_GLS_SDF_Option
+FEATURE Xcelium_MC_LP_Option
+FEATURE Xcelium_MC_DFT_Option
+FEATURE Integrated_Metrics_Center
+</code></pre>
+<p>which you need to add to <code>/opt/cadence/IC617/share/license/license.dat</code>.<br>
+4. Patch to crack Cadence IC617.</p>
+<pre><code class="language-shell">su
+cd patch
+sh ./1patch.sh /opt/Cadence/IC617
+sh ./1patch.sh /opt/Cadence/SPECTRE181
+sh ./1patch.sh /opt/Cadence/XCELIUM1803
+sh ./1patch.sh /opt/mentor/Calibre2019
+</code></pre>
+<ol start="5">
+<li>Add to path. Modify <code>.bashrc</code> in home location and paste them to the following lines. Remember to change the &quot;hostname&quot; below.</li>
+</ol>
+<pre><code class="language-shell">#--------------------------------------------------------------------------------------------------
+#  User's Guide
+#
+#  Copy this .bashrc environment setting file to the working (design project) directory, e.g.
+#  /home/johndoe/project1, /home/johndoe/project2, ...., etc.
+#
+#  On terminal, cd to the working directory and then source the .bashrc file by typing the
+#  following at the shell prompt $:
+#  . .bashrc
+#  Note:  a space is required between &quot;.&quot; and &quot;.bashrc&quot; in the above command.
+#
+#  Now all the environment variables in .bashrc file have been loaded into the current shell
+#  terminal and commands can be issued at the shell prompt $ to launch various Cadence
+#  tools, for instance, &quot;virtuoso &amp;&quot; (without the quotes).  Some frequently used commands are
+#  listed in this file together with corresponding environment settings.
+#
+#  You may finish the Cadence session at any time by closing the running Cadence tool.  To
+#  start up another Cadence session, just issue another Cadence command at the shell
+#  prompt $, e.g. &quot;innovus &amp;&quot; (without the quotes), etc. To exit the entire Cadence
+#  environment, close the terminal.  By closing the terminal, all loaded Cadence and Calibre
+#  environment variables are terminated since all of these variables are loaded and
+#  contained in the terminated shell terminal.  The benefit of sourcing .bashrc to a local shell
+#  terminal instead of setting them in the $HOME/.bashrc is that all of the loaded Cadence &amp;
+#  Calibre environment variables don't globally affect system environment settings and
+#  therefore you can run other programs on the system normally and won't disturb the
+#  Cadence session or vice versa.
+#
+#  If you're setting up a multiuser server, create a client copy of this .bashrc file and make
+#  necessary changes accordingly, e.g. point CDS_LIC_FILE to the server's license directory
+#  as port@hostname.  Instruct users to download it to the working directory on the client
+#  machine and source the client copy before starting up any Cadence tool.
+#--------------------------------------------------------------------------------------------------
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# For proper distributed processing execution using Cadence PVS software, it requires
+# that the following is set as the first line in .bashrc
+# Note: the space between the ! and $prompt is required!
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+if (! $prompt); then
+  exit
+fi
+
+##############################################################
+# Cadence Design Systems
+#
+# Master IC CAD flow including schematic capture, simulation, layout, and verification.
+##############################################################
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export CADHOME=/opt/Cadence
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+
+# Requied for Cadence on Linux
+export LANG=C
+
+# Set netlisting mode
+export CDS_Netlisting_Mode=Analog
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Specify a search order for .cdsenv
+#
+# Load .cdsenv in the working directory ($CWD)
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export CDS_LOAD_ENV=CWD
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# browser setup for Cadence Help
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export MOZILLA_HOME=/usr/bin/firefox
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Cadence - IC
+#
+# IC Schematic Entry, Simulation, Layout, Verification (Diva)
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export CDS=$CADHOME/IC617
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Some of these variables are used by various other tools, e.g. foundry's PDK.
+# Set them to be safe
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export CDSDIR=$CDS
+export CDSHOME=$CDS
+export Cadence_DIR=$CDS
+export CDS_INST_DIR=$CDS
+export CDS_ROOT=$CDS
+export CDSROOT=$CDS
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Set up either CDS_LIC_FILE or LM_LICENSE_FILE, but NOT both or it'll
+# take long time to search license!!!
+#
+# Set variable CDS_LIC_ONLY to ignore LM_LICENSE_FILE if it exists.
+#
+# Use absolute PATH to license.dat file instead of port@hostname
+#
+# The license server is no longer needed once all features are set to uncounted or 0
+# (unlimited use) for the FEATURE lines in license.dat.  The SERVER, VENDOR and
+# USE_SERVER lines can be safely removed from license.dat file, i.e. license.dat here
+# contains FEATURE lines only.  DO NOT START UP LICENSE SERVER DAEMON!!!
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export CDS_LIC_FILE=$CDS/share/license/license.dat
+export CDS_LIC_ONLY=1
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+
+# Support for 64-bit executables (this should be set for 64-bit hosts - IMPORTANT!!!)
+export CDS_AUTO_64BIT=ALL
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Master IC PATH
+#
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export PATH=$PATH:$CDSDIR/tools/dfII/bin:$CDSDIR/tools/plot/bin
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Set up OA (OpenAccess)
+#
+# It is STRONGLY recommended that you DO NOT change the OA installation that
+# each tool uses because tools are tested with the version of OA shipped with the
+# particular tool such as EDI142. However, if it is necessary to use a different
+# version of OA, you can do so with one of the following approaches:
+# 1) Use the Configure utility on InstallScape to specify a different OA installation.
+# 2) Use the OA_HOME environment variable to override the default OA installation.
+#
+# DO NOT set up OA_HOME as recommended above!  Instead use the default OA
+# installed within each Cadence tool, or use Configure utility on InstallScape to
+# re-set OA back to the original default OA installation in each product such as.EDI,
+# EXT, etc. if they were ever changed.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Set up Cadence unsupported systems such as Ubuntu Linux
+# IC617 supports Ubuntu14.04 so this variable is no longer required
+#export OA_UNSUPPORTED_PLAT=linux_rhel50_gcc44x
+
+# To run Virtuoso Schematic and Verilog Driven Mixed-Signal Flow,  the following
+# environment variable must be set before starting Virtuoso.
+export CDS_ENABLE_VMS=1
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Cadence Analog Simulators (MMSIM) - Spectre, SpectreRF, &amp;
+# RelXpert (Reliability Simulator)
+#
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export MMSIMHOME=$CADHOME/SPECTRE181
+export PATH=$PATH:$MMSIMHOME/bin:$MMSIMHOME/tools/relxpert/bin
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Cadence QRC Extraction, Advanced Analysis &amp; Modeling (EXT)
+#
+# Note: QRC must appear in the PATH before Assura executables
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export QRC_HOME=$CADHOME/EXT151
+export PATH=$PATH:$QRC_HOME/bin
+
+# Enhance precision of QRC for DFM MOS extraction
+export QRC_MOS_LW_PRECISION=Y
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Cadence Assura (ASSURA) - DRC. LVS, parasitic extraction
+#
+# These executables should be on the PATH after DFII executables
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#export ASSURAHOME=$CADHOME/ASSURA41
+#export PATH=$PATH:$ASSURAHOME/tools/bin:$ASSURAHOME/tools/assura/bin
+
+# Setting this variable enables Assura to work with PVS licenses only without
+# attempts to check-out Assura licenses first and thus speeds up execution.
+#export ASSURA_USE_PVS_LICENSE=1
+
+# Set up foundry DFM PATH for Assura - CRNxxG/CRNxxLP process for current project
+export TSMC_ASU_DFM_PATH=/opt/PDKs/tsmc/CRNxxG/Assura/lvs_rcx/DFM
+#export TSMC_ASU_DFM_PATH=/opt/PDKs/tsmc/CRNxxLP/Assura/lvs_rcx/DFM
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Cadence Physical Verification System, MaskCompose, &amp; QuickView (PVS)
+#
+# K2_VIEWER_HOME must be set before Quickview is invoked. LM_LICENSE_FILE
+# is required to run any K2 product.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export K2_HOME=$CADHOME/PVS151/tools/K2
+export K2_VIEWER_HOME=$K2_HOME/Viewer
+export K2_MASKCOMPOSE_HOME=$K2_HOME/MaskCompose
+export K2_MC_DATA=$HOME/Projects
+export LM_LICENSE_FILE=$CDS_LIC_FILE
+export PATH=$PATH:$CADHOME/PVS151/bin:$CADHOME/PVS151/tools/bin:$K2_MASKCOMPOSE_HOME/bin
+export XKEYSYMDB=$CDSDIR/tools/plot/etc/XKeysymDB
+
+# Commands on terminal to launch Quickview or MaskCompose
+#k2_viewer &amp;
+#k2_mcs &amp;
+
+##############################################################
+# Cadence Digital Flow - HDL Simulations, Synthesis, P&amp;R
+#
+##############################################################
+# Genus Synthesis Solution (GENUS) - Logic &amp; Physical Synthesis
+export PATH=$PATH:$CADHOME/GENUS152/tools/bin
+
+# Command on terminal to launch Genus
+# genus
+
+# RTL Power Analysis (Joules)
+export PATH=$PATH:$CADHOME/JLS151/bin
+
+# Command on terminal to start Joules
+# joules &amp;
+
+# Innovus Implementation System (INNOVUS) - P&amp;R
+export PATH=$PATH:$CADHOME/INNOVUS152/bin
+
+# Command on terminal to launch Innovus
+# innovus &amp;
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Cadence C-to-Silicon Compiler (CTOS)
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export PATH=$PATH:$CADHOME/CTOS142/bin
+
+# Command on terminal to launch CTOS
+# ctosgui &amp;
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Encounter Conformal (CONFRML) - Constraint Designer, Low Power Designer,
+# &amp; ECO Designer
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export PATH=$PATH:$CADHOME/CONFRML152/bin
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Command on terminal to launch Confirmal with license options:
+# -xl/-gxl/-rcv/-eco/-ecogxl/-lp/-lpxl/-ccd/-ccdxl/-lpgxl/-verify;
+#  default is set to -l if no option is given.
+# example:  &quot;lec -lp -verify -gui &amp;&quot; for Low Power license and Verify license
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# lec -lpgxl -verify -gui &amp;
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Silicon Signoff &amp; Verification (SSV) - including Tempus Timing Signoff
+# &amp; Voltus IC Power Integrity
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export PATH=$PATH:$CADHOME/SSV152/tools/bin
+
+# Command on terminal to launch tempus or voltus
+# tempus &amp;
+# voltus &amp;
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Incisive Verification Platform - Digital HDL simulators
+#
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export PATH=$PATH:$CADHOME/INCISIVE151/bin:$CADHOME/INCISIVE151/tools/bin::$CADHOME/INCISIVE151/tools/vtools/vfault/bin
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# For 3-step (ncvlog, ncelab, and ncsim) flow to run Virtuoso AMS Designer simulator,
+# the following library path environment variable has to be set.
+#
+# For single-step (irun) running AMS simulator, LD_LIBRARY_PATH is not required.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export LD_LIBRARY_PATH=$CADHOME/INCISIVE151/tools/lib/64bit:$CADHOME/INCISIVE151/tools/lib
+
+# Enable noise analysis in AMS designer
+AMS_ENABLE_NOISE=YES
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Set up Universal Verification Methodology (UVM) Environment Variables
+#
+# uvm_home defines the path to the UVM class library
+# ml_uvm defines the path to the ml_uvm code
+# ml_seq_dir defines the path to the SystemVerilog ml_uvm_seq package for using
+# sequencer stubs
+# The SystemVerilog package ml_uvm_seq is included in the Specman installation.
+# To use it, you must add the following command-line options to your compilation flow,
+# as additional command-line arguments to irun or ncvlog :
+# irun ... ${ML_SEQ_DIR}/ml_uvm_seq.sv -incdir ${ML_SEQ_DIR}
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export uvm_home=$CADHOME/INCISIVE151/tools/uvm
+export ml_uvm=$CADHOME/INCISIVE151/tools/uvm/uvm_lib/uvm_ml/sc/ml_uvm
+export ml_seq_dir=$CADHOME/INCISIVE151/specman/src
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Set up the HOME Environment Variable for Incisive Verification Kits
+# Source the appropriate environment setup file (Note: a space is required
+# between . and $SOCV_KIT_HOME/env.sh)
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export SOCV_KIT_HOME=$CADHOME/INCISIVE151/kits/VerificationKit
+#. $SOCV_KIT_HOME/env.sh
+
+# Command on terminal to start up Incisive Verification Kits
+# start_kit &amp;
+
+#***********************************************************************
+# Command on terminal to launch NClaunch
+#***********************************************************************
+# nclaunch &amp;
+
+# Command on terminal to start up Specman &amp; SimVision
+# specman -gui &amp;
+
+# Command on terminal to invoke Desktop Manager
+# emanager -desktop &amp;
+# vmanager &amp;
+
+# Encounter Diagnostics &amp; Test (ET)
+export PATH=$PATH:$CADHOME/ET151/bin
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Command on terminal to launch ET,  or with license options: -architect/-truetime/-diag
+# commands eta, ett and ediag are equivalent to et -architect, et -truetime and et -diag
+# which invokes Encounter Test Architect,  Encounter True_time Delay Test and
+# Encounter Diagnostics, respectively.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# eta &amp;
+# ett &amp;
+# ediag &amp;
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Verification IP Product Catalog (VIPCAT)
+#
+# VIP products are configured using a GUI called PureView.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export CDN_VIP_ROOT=$CADHOME/VIPCAT113
+export Cadence_VIP_LIC_ORDER=newrev:soc:portfolio:alacarte
+export ABVIP_ISNT_DIR=$CDN_VIP_ROOT/tools/abvip
+# In e , set SPECMAN_PATH to the location of the specific UVC directory
+export SPECMAN_PATH=$PATH:$CDN_VIP_ROOT/utils:$CDN_VIP_ROOT/packages:$CDN_VIP_ROOT/vips/enet/vr_enet
+export DENALI=$CDN_VIP_ROOT/tools/denali_64bit
+export PATH=$PATH:$DENALI/bin
+# In SV, add the UVC by including the specific VIP SV directory in the irun command:
+#irun -incdir $CDN_VIP_ROOT/vips/enet/vr_enet/sv
+
+# Command on terminal to launch PureView to configure VIP products.
+# pureview
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Manufacturability and Variability Sign-Off (MVS) - Litho Analyzers,
+# CMP Predictor
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export PATH=$PATH:$CADHOME/MVS152/tools/bin
+
+# Commands on terminal to launch Litho Analyzers, CMP Predictor
+#lpa &amp;
+#lea &amp;
+# need to figure out correct license keys in license.dat for CMP Predictor
+# (current ones don't work)
+#cmms -ccp &amp;
+#cmms -ccpo &amp;
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Library Characterizer (Liberate)
+#
+# Include the integrated Spectre in PATH
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#export ALTOSHOME=$CADHOME/LIBERATE151
+#export PATH=$PATH:$ALTOSHOME/bin
+#export PATH=$PATH:$ALTOSHOME/tools.lnx86/spectre/bin
+#export ALTOS_64=1
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Set up NCSU CDK
+#
+# This is optional for educational purpose; use foundry provided PDKs
+# instead for production projects by including foundry PDKs in cds.lib
+# in the working directory.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export CDK_DIR=/opt/PDKs/ncsu-cdk-1.6.0.beta
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Mentor Graphics Calibre
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export MGC_HOME=/opt/mentor
+export CALIBRE_HOME=$MGC_HOME/Calibre2019/aoj_cal_2019.3_15.11
+export MGLS_LICENSE_FILE=$MGC_HOME/license/license.dat
+export PATH=$PATH:$CALIBRE_HOME/bin
+export MGC_LIB_PATH=$CALIBRE_HOME/lib
+
+export CALIBRE_OS_MSG_LEVEL=1
+
+#***********************************************************************
+# Enable Calibre RealTime with Cadence Virtuoso
+#***********************************************************************
+export MGC_CALIBRE_REALTIME_VIRTUOSO_ENABLED=1
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# This variable enables Calibre Interactive to save all GUI settings including default
+# values to a runset file for future re-run
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export MGC_CALIBRE_SAVE_ALL_RUNSET_VALUES=1
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Set up socket connection with Virtuoso schematic or layout viewer (using default ports
+# 9199 for schematic and 9189 for layout) in the form of host:port
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+export MGC_CALIBRE_SCHEMATIC_SERVER=hostname:9199S
+export MGC_CALIBRE_LAYOUT_SERVER=hostname:9189
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# The license server is no longer needed once all features are set to uncounted or 0
+# (unlimited use) for the FEATURE lines in license.dat. file.  The SERVER, VENDOR and
+# USE_SERVER lines can be safely removed from license.dat file, i.e. license.dat here
+# contains FEATURE lines only.  DO NOT START UP LICENSE SERVER DAEMON!!!
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#***********************************************************************
+# Set the name of the executable for displaying PDF documentation from Calibre Help
+# menu. The default is acroread if it exists.  Make sure evince has been installed before
+# setting up the following (on Ubuntu type command &quot;sudo apt-get install evince&quot;).
+#***********************************************************************
+export MGC_PDF_READER=evince
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Command on terminal to launch Cadence Virtuoso tools
+#
+# Adding &amp; runs the process in the background allowing to continue using
+# the current terminal.
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#virtuoso &amp;
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export SYSTEM_CDS_LIB_DIR=/opt/Cadence/IC617/share/cdssetup
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+export OA_UNSUPPORTED_PLAT=linux_rhel50_gcc48x
+
+# User specific aliases and functions
+# User specific aliases and functions
+####################
+# Cadence
+#####################
+export INCISIVDIR=/opt/Cadence/XCELIUM1803/
+export VRST_HOME=/opt/Cadence/XCELIUM1803/
+export LM_LICENSE_FILE=/opt/Cadence/license/Cadence.dat
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/Cadence/XCELIUM1803/tools.lnx86/lib
+alias irun=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/lib/bin/irun&quot;
+alias simv=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/lib/bin/simvision&quot;
+alias simvision=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/bin/simvision -64 &amp;&quot;
+alias ncvlog=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/bin/ncvlog&quot;
+alias ncsim=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/bin/ncvsim&quot;
+alias ncelab=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/bin/ncelab&quot;
+alias ncvhdl_p=&quot;/opt/Cadence/XCELIUM1803/tools.lnx86/bin/ncvhdl_p&quot;
+export SPECMAN_HOME=$INCISIVDIR/components/sn
+export SPECMAN_DIR=$SPECMAN_HOME/
+export PATH=&quot;$PATH:$INCISIVDIR/bin&quot;
+export PATH=&quot;$PATH:$INCISIVDIR/tools.lnx86/bin&quot;
+export PATH=&quot;$PATH:$INCISIVDIR/tools.lnx86/dfII/bin&quot;
+
+alias i=&quot;icfb&amp;&quot;
+alias v=&quot;virtuoso&amp;&quot;
+WORKdir=&quot;~/newpdk/HHGRACE_PDK_BCD350GE/prj&quot;
+alias cdw=&quot;cd $WORKdir&quot;
+</code></pre>
+<h2 id="enjoy-it">Enjoy it</h2>
+<p>Go to your workspace and start it.<br>
+But to use it gracefully I highly recommand you to create a start bash and a desktop icon.</p>
+<p><code>start.sh</code></p>
+<pre><code class="language-shell">#!/bin/sh
+cd /home/ricardo/Project
+virtuoso&amp;
+</code></pre>
+<p>Then give the privilige to run the shell script using <code>chmod 777 start.sh</code>.</p>
+<p><code>Virtuoso.desktop</code></p>
+<pre><code class="language-shell">[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=true
+Exec=/home/ricardo/Project/start.sh
+Name=Virtuoso
+Icon=&quot;the folder where you save the jpg of Virtuoso&quot;
+</code></pre>
+<p>Finally give the privilige to run the  <code>.desktop</code> using <code>chmod 777 Virtuoso.desktop</code>.</p>
+<p><em>Enjoy it!</em></p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#announcement">Announcement</a></li>
+<li><a href="#preparation">Preparation</a></li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#os">OS</a></li>
+<li><a href="#environment">Environment</a></li>
+<li><a href="#cadence">Cadence</a></li>
+<li><a href="#patch">Patch</a></li>
+</ul>
+</li>
+<li><a href="#enjoy-it">Enjoy it</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ricardosung.tech/build-your-ic-design-evironment-based-on-cadence-ic617-package/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ricardosung.tech/build-your-ic-design-evironment-based-on-cadence-ic617-package/&sharesource=qzone&title=Build Your IC Design Evironment Based on Cadence IC617 Package&pics=https://ricardosung.tech/images/avatar.png?v=1656230709436&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ricardosung.tech/build-your-ic-design-evironment-based-on-cadence-ic617-package/&sharesource=weibo&title=Build Your IC Design Evironment Based on Cadence IC617 Package + " - " + &pic="https://ricardosung.tech/images/avatar.png?v=1656230709436 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src="https://dm2305files.storage.live.com/y4mkmCY8O909XPXoPP_rgkvkoJPZ4xCVzy15R6uZfC7EskYurnLBvdRHHXQmugvQY0XBkGMdVln1ASMpQNnJgtD-HNGQg_mIC8VSbvSWwTqD61lC7_ELKF_23jkApkdk-WX2xgKCgN2hwGP2AFYXIp31ohwVaroIGQ9OTzhkXPx_DmFV3uy7BtClTKzx7DZDm0q?width=1080&amp;height=1094&amp;cropmode=none"><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://dm2305files.storage.live.com/y4m0cD5o2dGNAepQvue7nu-wLmL-pN0DImW-Sbq_fAXxztTI55YUmaA0TPDeC6CeC8bGi9wVwJtDYrD70xKuZ7F-ReqY2Iqp37BKcxcYrgS793GM4zlyT9FoD8QdoouAqTrvIRgM1CSGT5T1hqyi6ll8wZ-9mrURskYRuclZZDJKxDAssY9lB3rLAHRX3dKxncB?width=1118&amp;height=1024&amp;cropmode=none"><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ricardosung.tech/DFcwZAvXw/">#
+                                                Linux
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/IMSRVMLdz/">#
+                                                Virtuoso
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/_SVivXVOe/">#
+                                                IC Design
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/5zyCJ74Ai/">#
+                                                English
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://ricardosung.tech/to-improve-rhel-85/">
+                                                                                            To Improve RHEL 8.5
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://ricardosung.tech/two-phase-and-three-level-buck-x-connectedcross-connected-flying-capacitors-for-current-balancing/">
+                                                                                                    Two-Phase &amp; Three-Level Buck X-Connected/Cross-Connected Flying Capacitors for Current Balancing
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Ricardo&#39;s Blog &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                GitHub.com &amp; Aliyun.com
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.5
+                </div>
+                
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var music_array = [];
+                        
+                        music_array.push({
+                            name: '僕が死のうと思ったのは',
+                            url: 'http://music.163.com/song/media/outer/url?id=26830207',
+                            artist: '中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生活在别处的你 Another me',
+                            url: 'http://music.163.com/song/media/outer/url?id=1860567964',
+                            artist: '毛不易 / 中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: 'FLY-飞',
+                            url: 'http://music.163.com/song/media/outer/url?id=479422828',
+                            artist: 'ANU',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '男孩',
+                            url: 'http://music.163.com/song/media/outer/url?id=467952048',
+                            artist: '梁博',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '停止線の遥か手前で',
+                            url: 'http://music.163.com/song/media/outer/url?id=737462',
+                            artist: 'GOOD ON THE REEL',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '我很丑可是我很温柔',
+                            url: 'http://music.163.com/song/media/outer/url?id=543657007',
+                            artist: '赵传',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '上头歌',
+                            url: 'http://music.163.com/song/media/outer/url?id=538227228',
+                            artist: '石磊4ROCK',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生而为人',
+                            url: 'http://music.163.com/song/media/outer/url?id=1335350269',
+                            artist: '尚士达',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '浪子回頭',
+                            url: 'http://music.163.com/song/media/outer/url?id=516728102',
+                            artist: '茄子蛋',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '野子',
+                            url: 'http://music.163.com/song/media/outer/url?id=401723037',
+                            artist: '苏运莹',
+                            cover: '',
+                        });
+                        
+                        console.log(" MusicList: " + music_array);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: music_array
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1656230709436);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+                
+                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
+                    <script>
+                        (function(T, h, i, n, k, P, a, g, e) {
+                            g = function() {
+                                P = h.createElement(i);
+                                a = h.getElementsByTagName(i)[0];
+                                P.src = k;
+                                P.charset = "utf-8";
+                                P.async = 1;
+                                a.parentNode.insertBefore(P, a)
+                            };
+                            T["ThinkPageWeatherWidgetObject"] = n;
+                            T[n] || (T[n] = function() {
+                                (T[n].q = T[n].q || []).push(arguments)
+                            });
+                            T[n].l = +new Date();
+                            if (T.attachEvent) {
+                                T.attachEvent("onload", g)
+                            } else {
+                                T.addEventListener("load", g, false)
+                            }
+                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+                    </script>
+                    <script>
+                        var wearther_margin = "10px 10px";
+                        
+                        wearther_margin = "70px 5px";
+                        
+                        tpwidget("init", {
+                            "flavor": "bubble",
+                            "location": "WX4FBXXFKE4F",
+                            "geolocation": "enabled",
+                            "position": "bottom-left",
+                            "margin": wearther_margin,
+                            "language": "zh-chs",
+                            "unit": "c",
+                            "theme": "chameleon",
+                            "uid": "UFC977E1C7",
+                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
+                        });
+                        tpwidget("show");
+                    </script>
+                    
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

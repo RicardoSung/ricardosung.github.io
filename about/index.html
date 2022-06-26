@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    Ricardo&#39;s Blog
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta name="google-site-verification" content="w6HoLfl1GA2J6HYin9M9NfIVAcPd9DiUgcAjgk0poNg" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Ricardo">
+<meta name="description" content="Integrated Circuit into the future.">
+<meta name="keywords" content="Ricardo Sung, IC design, Power management, DIY">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ricardosung.tech/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-291737154"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'UA-291737154');
+                                </script>
+                                
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ricardosung.tech">
+                    Ricardo&#39;s Blog
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        Home
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        Tags
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        Links
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/about">
+                        About
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/resume">
+                        Resume
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ricardosung.tech">
+                            Ricardo&#39;s Blog
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            Home
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            Tags
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            Links
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/about">
+                            About
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/resume">
+                            Resume
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                About
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        Ricardo's Blog
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2021-11-08</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">1.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">466</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://ricardosung.tech/GLnV4vaPs/">Chinese</a>
+                                
+                                <a href="https://ricardosung.tech/Oj11jEf6r/">Resume</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <h2 id="我是谁">我是谁？</h2>
+<p>前天朝大四学生一枚，就读于电子科技大学，现澳门大学-集成电路研究生。</p>
+<h2 id="我喜欢什么">我喜欢什么？</h2>
+<p>这个问题，其实我可以秒答，我喜欢一切可爱的事物。<br>
+好油腻啊。<br>
+认真点，我喜欢的东西很多，只要喜欢的大概率都会，比如：电路、嵌入式、口琴等。<br>
+当然，我尤其喜欢FPS游戏，CoD、BattleField、Apex、R6S、CS:GO的老玩家了，同时，我也是个LOL喷子，也不知道从什么时候开始，大概是上大学不玩Dota之后吧。</p>
+<h2 id="感情状况">感情状况？</h2>
+<p>本人自觉是一个开朗乐观的人，没有什么是战胜不了的，人定胜天。<br>
+啥，你问，有没有gf？<br>
+Sorry，我看别人谈恋爱挺多的，到现在还在solo。<br>
+体嫌口正直，嘴上一直想要，身体上是逃避的，或许也是没有遇到对的人？</p>
+<h2 id="以后要做什么">以后要做什么？</h2>
+<p>个性是自由自在的，想做自己喜欢的事情。<br>
+现在我喜欢IC，所以我就去做IC了，或许哪天我觉得IC不好玩了，就去学医了呢？！</p>
+<h2 id="本博客的目的">本博客的目的？</h2>
+<p>下定决心好久才拾起博客，说实话，一下子买了10年的域名还是有些肉疼的。<br>
+想写点自己的看法，论文的阅读笔记，一些电子产品的评测等，可能哪天我润了会写点时事？<br>
+当然，我也会写很多我自己做的东西，但是，嘛，大学四年做的东西太多了，等我哪天整理一下再发上来吧。</p>
+<h2 id="博客头像">博客头像</h2>
+<p>博客头像是自己画的，当时想画个分院帽，结果好多人都说这是派大星，嘛，反正变成了一个“四不像”的东西，就像我这个人，什么都沾点，什么都不像，hhh。</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%88%91%E6%98%AF%E8%B0%81">我是谁？</a></li>
+<li><a href="#%E6%88%91%E5%96%9C%E6%AC%A2%E4%BB%80%E4%B9%88">我喜欢什么？</a></li>
+<li><a href="#%E6%84%9F%E6%83%85%E7%8A%B6%E5%86%B5">感情状况？</a></li>
+<li><a href="#%E4%BB%A5%E5%90%8E%E8%A6%81%E5%81%9A%E4%BB%80%E4%B9%88">以后要做什么？</a></li>
+<li><a href="#%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%9B%AE%E7%9A%84">本博客的目的？</a></li>
+<li><a href="#%E5%8D%9A%E5%AE%A2%E5%A4%B4%E5%83%8F">博客头像</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ricardosung.tech/about/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ricardosung.tech/about/&sharesource=qzone&title=About&pics=https://ricardosung.tech/images/avatar.png?v=1656230709436&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://ricardosung.tech/about/&sharesource=weibo&title=About + " - " + &pic="https://ricardosung.tech/images/avatar.png?v=1656230709436 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                            <div class="reward ">
+                                                                <div class="reward-button ">&yen;
+                                                                    <span class="reward-code "> 
+                                                                <span class="alipay-code "> <img class="alipay-img " alt = "support " src="https://dm2305files.storage.live.com/y4mkmCY8O909XPXoPP_rgkvkoJPZ4xCVzy15R6uZfC7EskYurnLBvdRHHXQmugvQY0XBkGMdVln1ASMpQNnJgtD-HNGQg_mIC8VSbvSWwTqD61lC7_ELKF_23jkApkdk-WX2xgKCgN2hwGP2AFYXIp31ohwVaroIGQ9OTzhkXPx_DmFV3uy7BtClTKzx7DZDm0q?width=1080&amp;height=1094&amp;cropmode=none"><b>Alipay</b> </span>
+                                                                    <span class="wechat-code "> <img alt ="support " class="wechat-img " src="https://dm2305files.storage.live.com/y4m0cD5o2dGNAepQvue7nu-wLmL-pN0DImW-Sbq_fAXxztTI55YUmaA0TPDeC6CeC8bGi9wVwJtDYrD70xKuZ7F-ReqY2Iqp37BKcxcYrgS793GM4zlyT9FoD8QdoouAqTrvIRgM1CSGT5T1hqyi6ll8wZ-9mrURskYRuclZZDJKxDAssY9lB3rLAHRX3dKxncB?width=1118&amp;height=1024&amp;cropmode=none"><b>Wechat</b> </span> </span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://ricardosung.tech/GLnV4vaPs/">#
+                                                Chinese
+                                                    </a>
+                                                    
+                        <a href="https://ricardosung.tech/Oj11jEf6r/">#
+                                                Resume
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                            
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Ricardo&#39;s Blog &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                GitHub.com &amp; Aliyun.com
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.5
+                </div>
+                
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var music_array = [];
+                        
+                        music_array.push({
+                            name: '僕が死のうと思ったのは',
+                            url: 'http://music.163.com/song/media/outer/url?id=26830207',
+                            artist: '中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生活在别处的你 Another me',
+                            url: 'http://music.163.com/song/media/outer/url?id=1860567964',
+                            artist: '毛不易 / 中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: 'FLY-飞',
+                            url: 'http://music.163.com/song/media/outer/url?id=479422828',
+                            artist: 'ANU',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '男孩',
+                            url: 'http://music.163.com/song/media/outer/url?id=467952048',
+                            artist: '梁博',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '停止線の遥か手前で',
+                            url: 'http://music.163.com/song/media/outer/url?id=737462',
+                            artist: 'GOOD ON THE REEL',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '我很丑可是我很温柔',
+                            url: 'http://music.163.com/song/media/outer/url?id=543657007',
+                            artist: '赵传',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '上头歌',
+                            url: 'http://music.163.com/song/media/outer/url?id=538227228',
+                            artist: '石磊4ROCK',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生而为人',
+                            url: 'http://music.163.com/song/media/outer/url?id=1335350269',
+                            artist: '尚士达',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '浪子回頭',
+                            url: 'http://music.163.com/song/media/outer/url?id=516728102',
+                            artist: '茄子蛋',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '野子',
+                            url: 'http://music.163.com/song/media/outer/url?id=401723037',
+                            artist: '苏运莹',
+                            cover: '',
+                        });
+                        
+                        console.log(" MusicList: " + music_array);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: music_array
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1656230709436);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+                
+                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
+                    <script>
+                        (function(T, h, i, n, k, P, a, g, e) {
+                            g = function() {
+                                P = h.createElement(i);
+                                a = h.getElementsByTagName(i)[0];
+                                P.src = k;
+                                P.charset = "utf-8";
+                                P.async = 1;
+                                a.parentNode.insertBefore(P, a)
+                            };
+                            T["ThinkPageWeatherWidgetObject"] = n;
+                            T[n] || (T[n] = function() {
+                                (T[n].q = T[n].q || []).push(arguments)
+                            });
+                            T[n].l = +new Date();
+                            if (T.attachEvent) {
+                                T.attachEvent("onload", g)
+                            } else {
+                                T.addEventListener("load", g, false)
+                            }
+                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+                    </script>
+                    <script>
+                        var wearther_margin = "10px 10px";
+                        
+                        wearther_margin = "70px 5px";
+                        
+                        tpwidget("init", {
+                            "flavor": "bubble",
+                            "location": "WX4FBXXFKE4F",
+                            "geolocation": "enabled",
+                            "position": "bottom-left",
+                            "margin": wearther_margin,
+                            "language": "zh-chs",
+                            "unit": "c",
+                            "theme": "chameleon",
+                            "uid": "UFC977E1C7",
+                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
+                        });
+                        tpwidget("show");
+                    </script>
+                    
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

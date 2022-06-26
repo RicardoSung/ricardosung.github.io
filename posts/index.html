@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    
+                <meta charset="utf-8" />
+<title>
+    Posts | Ricardo&#39;s Blog
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta name="google-site-verification" content="w6HoLfl1GA2J6HYin9M9NfIVAcPd9DiUgcAjgk0poNg" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="Ricardo">
+<meta name="description" content="Integrated Circuit into the future.">
+<meta name="keywords" content="Ricardo Sung, IC design, Power management, DIY">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://ricardosung.tech/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+    
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+                    
+                        <!--CDN样式-->
+                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-291737154"></script>
+                                <script>
+                                    window.dataLayer = window.dataLayer || [];
+
+                                    function gtag() {
+                                        dataLayer.push(arguments);
+                                    }
+                                    gtag('js', new Date());
+                                    gtag('config', 'UA-291737154');
+                                </script>
+                                
+                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://ricardosung.tech">
+                    Ricardo&#39;s Blog
+                </a>
+            </div>
+
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        Home
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        Archives
+                    </a>
+                    
+                    <a class="menu-item" href="/tags">
+                        Tags
+                    </a>
+                    
+                    <a class="menu-item" href="/friends">
+                        Links
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/about">
+                        About
+                    </a>
+                    
+                    <a class="menu-item" href="https://ricardosung.tech/resume">
+                        Resume
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://ricardosung.tech">
+                            Ricardo&#39;s Blog
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1656230709436" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            Home
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            Archives
+                        </a>
+                        
+                        <a class="menu-item" href="/tags">
+                            Tags
+                        </a>
+                        
+                        <a class="menu-item" href="/friends">
+                            Links
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/about">
+                            About
+                        </a>
+                        
+                        <a class="menu-item" href="https://ricardosung.tech/resume">
+                            Resume
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+            <div class="post-main">
+                <div class="post-list">
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+        
+                
+                    
+    
+                    
+                        
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/eEZqyqNUP/">
+                                                <h2 class="post-title">
+                                                    Series-Resonator Buck Converter—Viability Demonstration
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/S7djJEch_/">
+                                                <h2 class="post-title">
+                                                    Analysis of Dual-Inductor Hybrid Converters for Extreme Conversion Ratios
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/5IF8S-BAZ/">
+                                                <h2 class="post-title">
+                                                    A 1.23W/mm2 83.7%-Efficiency 400MHz 6-Phase Fully Integrated Buck Converter in 28nm CMOS with On-Chip Capacitor Dynamic Re-Allocation for Inter-Inductor Current Balancing and Fast DVS of 75mV/ns
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/XmYw0tYP_/">
+                                                <h2 class="post-title">
+                                                    A 6A 40MHz four-phase ZDS hysteretic DC-DC converter with 118mV droop and 230ns response time for a 5A/5ns load transient
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/d2N4sMoV5/">
+                                                <h2 class="post-title">
+                                                    A 4A 12-to-1 Flying Capacitor Cross-Connected DC-DC Converter with Inserted D gt;0.5 Control Achieving gt;2x Transient Inductor Current Slew Rate and 0.73× Theoretical Minimum Output Undershoot of DSD
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/tL_vciIrY/">
+                                                <h2 class="post-title">
+                                                    A 12V/24V-to-1V DSD Power Converter with 56mV Droop and 0.9\mu \mathrmS$ 1% Settling Time for a 3A/20ns Load Transient
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/KmRUJJnqb/">
+                                                <h2 class="post-title">
+                                                    A Continuous-Input-Current Passive-Stacked Third-Order Buck Converter Achieving 0.7W/mm2 Power Density and 94% Peak Efficiency
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/63YW50hC2/">
+                                                <h2 class="post-title">
+                                                    A 4-/spl mu/a quiescent-current dual-mode digitally controlled buck converter IC for cellular phone applications
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/5B0vCQ-_m/">
+                                                <h2 class="post-title">
+                                                    Ultra low power control circuits for PWM converters
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2022-05-11</span>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/oneplus-watch-ti-yan-bao-gao/">
+                                                <h2 class="post-title">
+                                                    OnePlus Watch 体验报告
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-11-23</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/hPLKmb0_y/">
+          体验报告
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/GLnV4vaPs/">
+          Chinese
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/add-pdk-for-cadence-ic617/">
+                                                <h2 class="post-title">
+                                                    Add PDK for Cadence IC617
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-11-18</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/IMSRVMLdz/">
+          Virtuoso
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/5zyCJ74Ai/">
+          English
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/to-improve-rhel-85/">
+                                                <h2 class="post-title">
+                                                    To Improve RHEL 8.5
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-11-17</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/IMSRVMLdz/">
+          Virtuoso
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/5zyCJ74Ai/">
+          English
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/build-your-ic-design-evironment-based-on-cadence-ic617-package/">
+                                                <h2 class="post-title">
+                                                    Build Your IC Design Evironment Based on Cadence IC617 Package
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-11-14</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/DFcwZAvXw/">
+          Linux
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/IMSRVMLdz/">
+          Virtuoso
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/5zyCJ74Ai/">
+          English
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/two-phase-and-three-level-buck-x-connectedcross-connected-flying-capacitors-for-current-balancing/">
+                                                <h2 class="post-title">
+                                                    Two-Phase &amp; Three-Level Buck X-Connected/Cross-Connected Flying Capacitors for Current Balancing
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-11-08</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/5zyCJ74Ai/">
+          English
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/low-temperature-operation-of-a-three-level-buck-dc-dc-converter/">
+                                                <h2 class="post-title">
+                                                    A Three-Level (Multi-Level) Buck DC-DC Converter
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-11-05</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/5zyCJ74Ai/">
+          English
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                
+                                    <section class="post-item">
+                                        <div class="content">
+                                            <a href="https://ricardosung.tech/two-phase-buck-converter-with-series-capacitor/">
+                                                <h2 class="post-title">
+                                                    Two Phase Buck Converter with Series Capacitor
+                                                </h2>
+                                            </a>
+                                            <div class="post-abstract">
+                                                
+                                            </div>
+                                            <div class="post-info">
+                                                <span><i class="fa fa-calendar" aria-hidden="true"></i> 2021-10-23</span>
+                                                
+                                                    <span>
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        
+        <a href="https://ricardosung.tech/Z0ICAXkp4/">
+          Hybrid Topology
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/2Cpd8gArw/">
+          PowerManage
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/mtzHqoQcv/">
+          Paper
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_SVivXVOe/">
+          IC Design
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/N13JcKHCm/">
+          Reading Notes
+          
+          ,
+          
+        </a>
+        
+        <a href="https://ricardosung.tech/_8PDp8YTM/">
+          PCB Design
+          
+        </a>
+        
+      </span>
+                                                    
+                                            </div>
+                                        </div>
+                                        
+                                    </section>
+                                    
+                                        
+                                            
+                            
+                                            
+                </div>
+            </div>
+    </div>
+    
+    <div id="player"></div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Ricardo&#39;s Blog &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://coding.net" target="_blank">
+                                                GitHub.com &amp; Aliyun.com
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.5
+                </div>
+                
+                    <script>
+                        var pat = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+
+                    function LoadPlayer() {
+                        var music_array = [];
+                        
+                        music_array.push({
+                            name: '僕が死のうと思ったのは',
+                            url: 'http://music.163.com/song/media/outer/url?id=26830207',
+                            artist: '中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生活在别处的你 Another me',
+                            url: 'http://music.163.com/song/media/outer/url?id=1860567964',
+                            artist: '毛不易 / 中島美嘉',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: 'FLY-飞',
+                            url: 'http://music.163.com/song/media/outer/url?id=479422828',
+                            artist: 'ANU',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '男孩',
+                            url: 'http://music.163.com/song/media/outer/url?id=467952048',
+                            artist: '梁博',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '停止線の遥か手前で',
+                            url: 'http://music.163.com/song/media/outer/url?id=737462',
+                            artist: 'GOOD ON THE REEL',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '我很丑可是我很温柔',
+                            url: 'http://music.163.com/song/media/outer/url?id=543657007',
+                            artist: '赵传',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '上头歌',
+                            url: 'http://music.163.com/song/media/outer/url?id=538227228',
+                            artist: '石磊4ROCK',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '生而为人',
+                            url: 'http://music.163.com/song/media/outer/url?id=1335350269',
+                            artist: '尚士达',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '浪子回頭',
+                            url: 'http://music.163.com/song/media/outer/url?id=516728102',
+                            artist: '茄子蛋',
+                            cover: '',
+                        });
+                        
+                        music_array.push({
+                            name: '野子',
+                            url: 'http://music.163.com/song/media/outer/url?id=401723037',
+                            artist: '苏运莹',
+                            cover: '',
+                        });
+                        
+                        console.log(" MusicList: " + music_array);
+                        
+                        const ap = new APlayer({
+                            container: document.getElementById('player'),
+                            fixed: true,
+                            audio: music_array
+                        });
+                        
+                    }
+                    LoadPlayer();
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1656230709436);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+                
+                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
+                    <script>
+                        (function(T, h, i, n, k, P, a, g, e) {
+                            g = function() {
+                                P = h.createElement(i);
+                                a = h.getElementsByTagName(i)[0];
+                                P.src = k;
+                                P.charset = "utf-8";
+                                P.async = 1;
+                                a.parentNode.insertBefore(P, a)
+                            };
+                            T["ThinkPageWeatherWidgetObject"] = n;
+                            T[n] || (T[n] = function() {
+                                (T[n].q = T[n].q || []).push(arguments)
+                            });
+                            T[n].l = +new Date();
+                            if (T.attachEvent) {
+                                T.attachEvent("onload", g)
+                            } else {
+                                T.addEventListener("load", g, false)
+                            }
+                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
+                    </script>
+                    <script>
+                        var wearther_margin = "10px 10px";
+                        
+                        wearther_margin = "70px 5px";
+                        
+                        tpwidget("init", {
+                            "flavor": "bubble",
+                            "location": "WX4FBXXFKE4F",
+                            "geolocation": "enabled",
+                            "position": "bottom-left",
+                            "margin": wearther_margin,
+                            "language": "zh-chs",
+                            "unit": "c",
+                            "theme": "chameleon",
+                            "uid": "UFC977E1C7",
+                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
+                        });
+                        tpwidget("show");
+                    </script>
+                    
+</body>
+
+</html>
